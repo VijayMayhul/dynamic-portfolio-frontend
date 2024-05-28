@@ -1,0 +1,196 @@
+/* template_2.css  */
+#T2_navbarNav{
+    flex-direction: column-reverse;
+}
+.nav-brand-title{
+    color: #18d26e;
+}
+
+#T2_navbarNav .nav-link:hover{
+  color: #18d26e;
+  font-weight: 500;
+}
+#T2_navbarNav .nav-item .active{
+  color: white !important;
+  font-weight: 500;
+  border-bottom : 2px solid #18d26e;
+}
+
+.bg-shadow{
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.T2-main .my-icon {
+    margin: 10px;
+    font-size: 24px;
+    color: #18d26e; 
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+} 
+
+.T2-main .my-icon:hover {
+    color: #18d26e; 
+    transform : scale(1.2) rotate(10deg);
+    text-shadow : 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    cursor : pointer; 
+  } 
+
+  .btn:hover{
+    transform: scale(1.05);
+  }
+  .text-green, #T2_navbarNav section .h2{
+    color: #18d26e ;
+  }
+
+  .text-orange{
+    color: #e9ae6b;
+  }
+
+  .T2-main .skill-card {
+    background: linear-gradient(135deg, #007bff 0%, #18d26e 100%);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white; 
+}
+
+.T2-main .skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.T2-main .skill-card-bottom-div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px; 
+  background-color: #007bff; 
+  transition: background-color 0.3s ease;
+}
+
+.T2-main .skill-card:hover .skill-card-bottom-div {
+  background-color: #18d26e;
+}
+
+.T2-main .work-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.T2-main .work-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+.T2-main .study-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #23971f;
+  position: relative;
+}
+
+.T2-main .study-item .duration, .T2-main .work-item .duration{
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.T2-main .study-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #23971f;
+}
+
+.T2-main .project-card {
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 10px 29px 0 rgba(67, 221, 74, 0.1);
+}
+
+.T2-main .project-card:hover {
+  border-color: #18d26e;
+  transform: scale(1.05);
+}
+
+.T2-main .project-card .title {
+  transition: color 0.3s ease;
+}
+
+.T2-main .project-card:hover .title, .T2-main .project-card:hover .bg-dark {
+  color: #18d26e !important;
+}
+
+.T2-main .project-card:hover .btn-dark{
+  background-color:#18d26e ;
+  border-color: #18d26e;
+  color: white !important;
+}
+
+.T2-main .info-box {
+  color: #9c8c8c;
+  padding: 20px;
+  width: 100%;
+  background: black;
+}
+
+.T2-main .info-box .icon {
+  font-size: 24px;
+  color: #18d26e;
+  border-radius: 50%;
+  padding: 14px;
+  float: left;
+  background: #444444;
+}
+
+.T2-main .info-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0 8px 68px;
+}
+
+.T2-main .info-box .social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
+}
+.T2-main .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 15px;
+  margin: 0 0 0 68px;
+  color: white;
+}
+
+.T2-main .up-arrow-div{
+  position: sticky;
+  background-color: #18d26e;
+  float: right;
+  right: 25px;
+  top: 250px;
+  z-index: 1;
+}
+
+.T2-main .down-arrow-div{
+  position: sticky;
+  background-color: #18d26e;
+  float: right;
+  right: 25px;
+  bottom: 150px;
+  z-index: 1;
+}

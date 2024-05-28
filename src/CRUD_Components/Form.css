@@ -1,0 +1,28 @@
+/* portfolio_form.css */
+.dropdown-toggle {
+    width : auto;
+    text-align: center;
+  }
+  
+ 
+  .dropdown-menu {
+    width: 100%;
+    position: absolute !important;
+    left: 75px !important;
+    top: 95px !important;
+  }
+
+  .form-nav-links .nav-link {
+    color: black; 
+    text-decoration: none; 
+    padding: 10px; 
+  }
+  
+  .form-nav-links .nav-link:hover {
+    color: green; 
+  }
+  
+  .form-nav-links .active {
+    color: blue !important; 
+    font-weight: bold; 
+  }
