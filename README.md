@@ -25,16 +25,26 @@ This is the Dynamic-Portfolio project, designed and developed by me as part of t
 
 ## Features
 
-<b>Responsive and Interactive Design</b>: The application is fully responsive, ensuring a seamless experience across all devices.
-<b>User Authentication</b>: Users can register, login, and reset their passwords.
-<b>User Management</b>: Efficient user management, allowing users to update their profile information.
-<b>CRUD Operations</b>: Users can create, read, update, and delete portfolio entries effortlessly.
-<b>Form Validation</b>: Robust form validation using Formik and Yup to ensure data integrity
-<b>PDF Export</b>: Easily export your portfolio to a PDF format for sharing or printing.
-<b>Customizable Templates</b>: Choose from a variety of templates to suit your personal or professional style.
-<b>Notifications</b>: Real-time feedback with toast notifications using React-toastify.
-<b>Routing</b>: Smooth navigation with React-router-dom.
-<b>State Management</b>: Efficient state management using Context API.
+<b>Responsive and Interactive Design</b>: 
+- The application is fully responsive, ensuring a seamless experience across all devices.
+<b>User Authentication</b>:
+- Users can register, login, and reset their passwords.
+<b>User Management</b>:
+- Efficient user management, allowing users to update their profile information.
+<b>CRUD Operations</b>:
+- Users can create, read, update, and delete portfolio entries effortlessly.
+<b>Form Validation</b>:
+- Robust form validation using Formik and Yup to ensure data integrity
+<b>PDF Export</b>:
+- Easily export your portfolio to a PDF format for sharing or printing.
+<b>Customizable Templates</b>:
+- Choose from a variety of templates to suit your personal or professional style.
+<b>Notifications</b>:
+- Real-time feedback with toast notifications using React-toastify.
+<b>Routing</b>:
+- Smooth navigation with React-router-dom.
+<b>State Management</b>:
+- Efficient state management using Context API.
 
 
 ## Lessons Learned
