@@ -31,7 +31,8 @@ const Context_Api_Component = ({ children }) => {
   const notifyInfo = (message) => toast.info(message, toastStyle);
   const notifyWarn = (message) => toast.warn(message, toastStyle);
   
-  const backendUrl = import.meta.env.VITE_BACKEND_URL; //getting backendUrl from .env file
+  // const backendUrl = import.meta.env.VITE_BACKEND_URL; //getting backendUrl from .env file
+  const backendUrl = 'https://dynamic-portfolio-backend-k0sw.onrender.com';
   const navigate = useNavigate(); // Initialize navigate
 
   //declaring some necessary state variables
