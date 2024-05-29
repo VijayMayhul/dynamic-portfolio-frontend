@@ -1,7 +1,7 @@
 
 # Dynamic-Portfolio-Frontend
 
-
+This is the Dynamic-Portfolio project, designed and developed by me as part of the Guvi-Zen class Capstone Project. With this application, you can create a personalized portfolio effortlessly by simply providing your information. It's user-friendly, highly customizable, and perfect for showcasing your professional or personal achievements.
 
 ## Tech Stack
 
@@ -9,31 +9,51 @@
 - CSS
 - Javascript
 - Bootstrap
-- React(axios, react-router-dom, Formik, Yup)
+- React
+- Date-fns
+- Axios
+- Lodash
+- React-toastify
+- React-router-dom
+- React-lazy & Suspense
+- Formik
+- Yup
+- Context-API
+- UuidV4
+- jsPDF
+- html2canvas
 
 ## Features
 
-- Responsive and Interactive Design
-- You can do CRUD operations in this website.
-- Form Validation
+<b>Responsive and Interactive Design</b>: The application is fully responsive, ensuring a seamless experience across all devices.
+<b>User Authentication</b>: Users can register, login, and reset their passwords.
+<b>User Management</b>: Efficient user management, allowing users to update their profile information.
+<b>CRUD Operations</b>: Users can create, read, update, and delete portfolio entries effortlessly.
+<b>Form Validation</b>: Robust form validation using Formik and Yup to ensure data integrity
+<b>PDF Export</b>: Easily export your portfolio to a PDF format for sharing or printing.
+<b>Customizable Templates</b>: Choose from a variety of templates to suit your personal or professional style.
+<b>Notifications</b>: Real-time feedback with toast notifications using React-toastify.
+<b>Routing</b>: Smooth navigation with React-router-dom.
+<b>State Management</b>: Efficient state management using Context API.
+
 
 ## Lessons Learned
 
-<b>Creating My Own Mock API</b>: 
-- https://mockapi.io/ --> Through this website I created my own api which was used by me in this task.
-- My Books API : https://65eed58eead08fa78a4f025d.mockapi.io/Books
-- My Authors API : https://65eed58eead08fa78a4f025d.mockapi.io/authors
+<b>Formik Library</b>: 
+- Gained proficiency in using the Formik library for handling form state and validation in React.
+- Implemented both Formik component and useFormik hook to manage form states efficiently.
   
-<b>Using Formik</b>: 
-- I learned to use Formik third party library for form validation. I used it in 2 different ways like using Formik Tag and also using useFormik Hook.
-
 <b>Using Yup</b>: 
-- I learned to use Yup third party library to create validation schema in Formik, which helped me to create my own schema's in form validation.
+- Learned to create validation schemas with Yup, ensuring robust validation logic is integrated within Formik forms.
+
+<b>Advanced React Featuresp</b>: 
+- <b>React Lazy and Suspense</b>: Leveraged lazy loading and suspense for code-splitting and improving application performance.
+- <b>Context API</b>: Mastered state management using Context API, providing a seamless way to manage and share state across components.
  
 
 ## Website
 
-[React-Formik-Task](https://vijay-react-formik-task.netlify.app/)
+[Dynamic-Portfolio](https://vijays-dynamic-portfolio.netlify.app/)
 
 
 ## Screenshots
@@ -65,6 +85,10 @@ Open [http://localhost:3693](http://localhost:3693) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Feedback
 
