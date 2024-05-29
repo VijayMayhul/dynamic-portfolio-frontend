@@ -104,7 +104,7 @@ const Portfolio = () => {
                 link to create your portfolio
               </p>
               <button
-                className="btn btn-success mt-1 mb-5"
+                className="btn btn-success mt-3 mb-5"
                 onClick={() => navigate("/user/templates")}
               >
                 Create Portfolio
