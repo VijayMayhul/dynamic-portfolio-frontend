@@ -62,8 +62,8 @@ const Login = () => {
       navigate("/user");
     } catch (error) {
       // Log any errors that occur during the request
-      console.error("Error:", error);
-      notifyError(`Network Error : ${error.response.data.message}`);
+      console.error("Error:", error.response.data.error);
+      notifyError(`${error.response.data.error}`);
     } finally {
       setLoadSpinner(false);
     }

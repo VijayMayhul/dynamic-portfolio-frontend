@@ -122,7 +122,7 @@ const Context_Api_Component = ({ children }) => {
     } catch (error) {
       // Log any errors that occur during the request
       console.error("Failed to delete portfolio data:", error.response.data.error);
-      notifyError(`Network Error : ${error.response.data.error}`);
+      notifyError(`${error.response.data.error}`);
       if (error.response.status === 401) {
         navigate("/login"); //unauthorized user navigate to login page
       }
@@ -153,7 +153,7 @@ const Context_Api_Component = ({ children }) => {
       } catch (error) {
         // Log any errors that occur during the request
         console.error("Failed to create portfolio data:", error.response.data.error);
-        notifyError(`Network Error : ${error.response.data.error}`);
+        notifyError(`${error.response.data.error}`);
         if (error.response.status === 401) {
           navigate("/login"); //unauthorized user navigate to login pag
         }
@@ -177,7 +177,7 @@ const Context_Api_Component = ({ children }) => {
       } catch (error) {
         // Log any errors that occur during the request
         console.error("Failed to update portfolio data:", error.response.data.error);
-        notifyError(`Network Error : ${error.response.data.error}`);
+        notifyError(`${error.response.data.error}`);
         if (error.response.status === 401) {
           navigate("/login"); //unauthorized user navigate to login pag
         }

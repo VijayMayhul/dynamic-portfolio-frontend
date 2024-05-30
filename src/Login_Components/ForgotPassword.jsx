@@ -38,8 +38,8 @@ const ForgotPassword = () => {
       notifySuccess(response.data.message);
     } catch (error) {
       // Log any errors that occur during the request
-      console.error("Error:", error.response.data.message);
-      notifyError(`Network Error : ${error.response.data.message}`);
+      console.error("Error:", error.response.data.error);
+      notifyError(`${error.response.data.error}`);
     } finally {
       setLoadSpinner(false);
     }
