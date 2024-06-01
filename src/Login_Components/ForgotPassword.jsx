@@ -91,7 +91,7 @@ const ForgotPassword = () => {
                           >
                             {loadSpinner ? (
                               <span
-                                className="spinner-border spinner-border-md"
+                                className="spinner-border spinner-border-sm"
                                 role="status"
                               ></span>
                             ) : (

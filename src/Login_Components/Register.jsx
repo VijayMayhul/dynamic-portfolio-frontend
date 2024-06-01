@@ -178,7 +178,7 @@ const Register = () => {
                             className="btn btn-info w-100 fw-bold"
                           >
                             {loadSpinner ? (
-                              <span className="spinner-border spinner-border-md" role="status"></span>
+                              <span className="spinner-border spinner-border-sm" role="status"></span>
                             ) : (
                               <span>Register</span>
                             )}

@@ -133,7 +133,7 @@ const ResetPassword = () => {
                             className="btn btn-primary w-100 fw-bold"
                           >
                             {loadSpinner ? (
-                              <span className="spinner-border spinner-border-md" role="status"></span>
+                              <span className="spinner-border spinner-border-sm" role="status"></span>
                             ) : (
                               <span>Reset Password</span>
                             )}
