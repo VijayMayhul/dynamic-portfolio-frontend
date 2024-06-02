@@ -69,7 +69,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container py-5 h-100">
+      <div className="container d-flex flex-column py-5">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-lg-10 col-md-10">
             <div className="card bg-dark text-info shadow-2-strong">

@@ -28,7 +28,6 @@ const Template_2 = lazy(() =>
 );
 
 const Portfolio = () => {
-
   //getting necessary things from context API
   const {
     userPortfolioData,
@@ -90,61 +89,66 @@ const Portfolio = () => {
 
   return (
     <>
-      <section className="my-5">
+      <section className="d-flex flex-column">
         <Suspense fallback={<Loading />}>
-          <h1 className="h1 text-center py-3">Portfolio</h1>
-          {userPortfolioData.template === "Template_1" ? (
-            <Template_1 data={data} ref={componentRef} />
-          ) : userPortfolioData.template === "Template_2" ? (
-            <Template_2 data={data} ref={componentRef} />
-          ) : (
-            <div className="text-center mt-5 pb-5">
-              <p className="fw-normal">
-                You have not created your portfolio yet! Please use the below
-                link to create your portfolio
-              </p>
-              <button
-                className="btn btn-success mt-3 mb-5"
-                onClick={() => navigate("/user/templates")}
-              >
-                Create Portfolio
-              </button>
-            </div>
-          )}
+            <h1 className="h1 text-center py-3">Portfolio</h1>
+            {userPortfolioData.template === "Template_1" ? (
+              <Template_1 data={data} ref={componentRef} />
+            ) : userPortfolioData.template === "Template_2" ? (
+              <Template_2 data={data} ref={componentRef} />
+            ) : (
+              <div className="text-center mt-5 pb-5 flex-grow-1 d-flex flex-column justify-content-center">
+                <p className="fw-normal">
+                  You have not created your portfolio yet! Please use the below
+                  button to create your portfolio
+                </p>
+                <div className="text-center">
+                  <button
+                    className="btn btn-success mt-3 mb-5"
+                    onClick={() => navigate("/user/templates")}
+                  >
+                    Create Portfolio
+                  </button>
+                </div>
+              </div>
+            )}
 
-          {userPortfolioData && Object.keys(userPortfolioData).length > 0 && (
-            <div className="mt-4 d-flex justify-content-around mt-2 flex-column flex-sm-row align-items-center">
-              <div>
-                <button
-                  className="btn btn-danger fw-normal my-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#deletePortfolioModal"
-                >
-                  Delete Portfolio
-                </button>
+            {userPortfolioData && Object.keys(userPortfolioData).length > 0 && (
+              <div className="mt-4 d-flex justify-content-around mt-2 flex-column flex-sm-row align-items-center">
+                <div>
+                  <button
+                    className="btn btn-danger fw-normal my-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deletePortfolioModal"
+                  >
+                    Delete Portfolio
+                  </button>
+                </div>
+                <div>
+                  <button
+                    className="btn btn-primary fw-normal my-3"
+                    onClick={() => navigate("/user/templates")}
+                  >
+                    Update Portfolio
+                  </button>
+                </div>
+                <div>
+                  <button
+                    className="btn btn-warning fw-bold my-3"
+                    onClick={handleExportToPDF}
+                  >
+                    Export to PDF
+                    {pdfLoaded && (
+                      <span
+                        className="spinner-border text-white spinner-border-sm fw-normal ms-2"
+                        role="status"
+                      ></span>
+                    )}
+                  </button>
+                </div>
               </div>
-              <div>
-                <button
-                  className="btn btn-primary fw-normal my-3"
-                  onClick={() => navigate("/user/templates")}
-                >
-                  Update Portfolio
-                </button>
-              </div>
-              <div>
-                <button
-                  className="btn btn-warning fw-bold my-3"
-                  onClick={handleExportToPDF}
-                >
-                  Export to PDF
-                  {pdfLoaded && (
-                  <span className="spinner-border text-white spinner-border-sm fw-normal ms-2" role="status"></span>
-                )}
-                </button>
-                
-              </div>
-            </div>
-          )}
+            )}
+         
         </Suspense>
       </section>
       <div

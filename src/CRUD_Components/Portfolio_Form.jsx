@@ -50,7 +50,7 @@ const Portfolio_Form = () => {
                     {dropdownBtnTxt}
                   </button>
                   {isDropdownOpen && (
-                    <div className="dropdown-menu show">
+                    <div className="dropdown-menu show w-75">
                       <NavLink
                         className="dropdown-item"
                         onClick={() => clickDropdownClose("Home")}
